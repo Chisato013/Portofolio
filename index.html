@@ -6,23 +6,43 @@
 -->
 <html>
 	<head>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 		<title>Astral by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+		#bg-video {
+			position: fixed;
+			top: 0;
+			left: 0;
+			min-width: 100vw;
+			min-height: 100vh;
+			width: auto;
+			height: auto;
+			z-index: -1;
+			object-fit: cover;
+		}
+		</style>
 	</head>
 	<body class="is-preload">
+
+		<!-- Video Background -->
+		<video autoplay loop muted playsinline id="bg-video">
+			<source src="assets/video/background.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
 
 		<!-- Wrapper-->
 			<div id="wrapper">
 
 				<!-- Nav -->
 					<nav id="nav">
-						<a href="#" class="icon solid fa-home"><span>Home</span></a>
-						<a href="#work" class="icon solid fa-folder"><span>Work</span></a>
+						<a href="#home" class="fa-solid fa-house"><span>Home</span></a>
+						<a href="#work" class="icon solid fa-folder"><span>About Me</span></a>
 						<a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>
-						<a href="https://www.instagram.com/neeexiq/" target="_blank" class="icon brands fa-instagram"><span>Instagram</span></a>
+
 					</nav>
 
 				<!-- Main -->
@@ -36,23 +56,23 @@
 								</header>
 								<a href="#work" class="jumplink pic">
 									<span class="arrow icon solid fa-chevron-right"><span>See my work</span></span>
-									<img src="freddom.png" alt="jedwqdqwdqqjdqjdioj" />
+									<img src="ereh.png" alt="jedwqdqwdqqjdqjdioj" />
 								</a>
 							</article>
 
 						<!-- Work -->
 							<article id="work" class="panel">
 								<header>
-									<h2>Tentang Saya</h2>
+									<h2>About Me</h2>
 								</header>
 								<p>
 									Saya adalah siswa SMKN 7 BALEENDAH yang sedang belajar tentang Frontend 
 									Development. Saya memiliki minat yang besar dalam pengembangan web dan
 									selalu berusaha untuk meningkatkan keterampilan saya dalam bidang ini. Hobi saya menonton anime.
 								</p>
-								<h2>Skill</h2>
+								<h2>Hard Skill</h2>
 								<p>
-								Saya bisa berbahasa jepang sedikit, saya juga bisa membuat website sederhana menggunakan HTML, CSS, dan PHP.
+								Saya menguasai basic PHP, HTML dan CSS  (Masih belajar).
 								</p>
 								<!-- Tambahkan gambar skill di bawah ini -->
 								<div style="display: flex; gap: 24px; align-items: center; margin-bottom: 24px;">
@@ -60,6 +80,35 @@
 <img src="css.png" alt="CSS" style="height:60px;">
 <img src="pngwing.com__8_-removebg-preview.png" alt="PHP" style="height:60px;">
 								</div>
+								<h2>Soft Skill</h2>
+								<p>
+									Saya mampu bekerja dalam tim, dan memiliki
+									kemampuan manajemen waktu yang efektif. Saya juga selalu berusaha untuk belajar hal-hal baru
+									dan beradaptasi dengan cepat terhadap perubahan.
+								<h2>Education</h2>
+<div class="timeline">
+  <div class="timeline-item">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+      <h4>2023 - 2026</h4>
+      <p>SMKN 7 BALEENDAH</p>
+    </div>
+  </div>
+  <div class="timeline-item">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+      <h4>2020 - 2023</h4>
+      <p>SMPIT AL-MADANI PRIMA</p>
+    </div>
+  </div>
+  <div class="timeline-item">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+      <h4>2013 - 2020</h4>
+      <p>SDN CIKOPO 1</p>
+    </div>
+  </div>
+</div>
 								<section>
 									<div class="row">
 									
@@ -69,30 +118,23 @@
 
 						<!-- Contact -->
 							<article id="contact" class="panel">
-								<header>
+								<header style="text-align: center;">
 									<h2>Contact Me</h2>
 								</header>
-								<form action="#" method="post">
-									<div>
-										<div class="row">
-											<div class="col-6 col-12-medium">
-												<input type="text" name="name" placeholder="Name" />
-											</div>
-											<div class="col-6 col-12-medium">
-												<input type="text" name="email" placeholder="Email" />
-											</div>
-											<div class="col-12">
-												<input type="text" name="subject" placeholder="Subject" />
-											</div>
-											<div class="col-12">
-												<textarea name="message" placeholder="Message" rows="6"></textarea>
-											</div>
-											<div class="col-12">
-												<input type="submit" value="Send Message" />
-											</div>
-										</div>
-									</div>
-								</form>
+								<div style="margin-top:24px; display:flex; justify-content:center; align-items:end; height:80px;">
+        <a href="https://www.instagram.com/neeexiq/" target="_blank" style="color:#e4405f; font-size:2em; margin-right:50px;">
+            <i class="fab fa-instagram"></i>
+        </a>
+		<br>
+		<a href="https://github.com/Chisato013" target="_blank" style="color:#000910; font-size:2em; margin-right: 50px;">
+        <i class="fab fa-github"></i>
+		<br>
+		<a href="https://www.tiktok.com/@neeexiq?is_from_webapp=1&sender_device=pc" target="_blank" style="color:#000; font-size:2em;">
+        <i class="fab fa-tiktok"></i>
+    </a>	
+    </a>
+    </div>
+							
 							</article>
 
 					</div>
